@@ -1,22 +1,9 @@
-import { Search } from "@mui/icons-material";
-import {
-  Card,
-  CardContent,
-  Divider,
-  Grid,
-  List,
-  Stack,
-  Typography,
-} from "@mui/material";
-import React from "react";
-import { useSearchParams, useLocation } from "react-router-dom";
-import AddUserDialog from "../components/AddUserDialog";
-import CardMember from "../components/CardMember";
-import CardUser from "../components/CardUser";
-import HeaderCard from "../components/HeaderCard";
-import Logo from "../components/Logo";
-import NavBar from "../components/NavBar";
-import PaginationBar from "../components/PaginationBar";
+import { Divider, Grid, Stack, Typography } from '@mui/material';
+import React from 'react';
+import { useLocation } from 'react-router-dom';
+import CardMember from '../components/CardMember';
+import Logo from '../components/Logo';
+import NavBar from '../components/NavBar';
 
 const About = () => {
   const currentTab = useLocation().pathname;
@@ -26,68 +13,68 @@ const About = () => {
       <Grid
         container
         spacing={0}
-        direction="column"
-        alignItems="center"
-        justifyContent="flex-start"
-        style={{ minHeight: "100vh" }}
+        direction='column'
+        alignItems='center'
+        justifyContent='flex-start'
+        style={{ minHeight: '100vh' }}
       >
-        <Stack direction="row" alignItems="center">
+        <Stack direction='row' alignItems='center'>
           <Logo />
           <Stack
-            direction="column"
-            justifyContent="flex-start"
-            alignItems="flex-start"
+            direction='column'
+            justifyContent='flex-start'
+            alignItems='flex-start'
             spacing={0.5}
           >
-            <Typography variant="h5" component="h5">
+            <Typography variant='h5' component='h5'>
               Simple Social Media
             </Typography>
             <span>By Kelompok 1</span>
           </Stack>
         </Stack>
-        <Divider sx={{ width: 400, m: 0.5 }} orientation="horizontal" />
+        <Divider sx={{ width: 400, m: 0.5 }} orientation='horizontal' />
         <NavBar currentTab={currentTab} />
         <Grid
           container
-          direction="row"
-          justifyContent="space-evenly"
-          alignItems="center"
+          direction='row'
+          justifyContent='space-evenly'
+          alignItems='center'
           xs={6}
         >
           <CardMember
             member={{
-              nama: "Aldi Mulyawan",
-              nim: "21120119120026",
-              username: "SMAMHTN",
+              nama: 'Aldi Mulyawan',
+              nim: '21120119120026',
+              username: 'SMAMHTN',
             }}
           />
           <CardMember
             member={{
-              nama: "Achmad Nazilul Fikri",
-              nim: "21120119130079",
-              username: "fikrinazilul1690",
+              nama: 'Achmad Nazilul Fikri',
+              nim: '21120119130079',
+              username: 'fikrinazilul1690',
             }}
           />
         </Grid>
         <Grid
           container
-          direction="row"
-          justifyContent="space-evenly"
-          alignItems="center"
+          direction='row'
+          justifyContent='space-evenly'
+          alignItems='center'
           xs={6}
         >
           <CardMember
             member={{
-              nama: "Muhammad Haikal Ash Shidqi",
-              nim: "21120119130081",
-              username: "haikalkilkul",
+              nama: 'Muhammad Haikal Ash Shidqi',
+              nim: '21120119130081',
+              username: 'haikalkilkul',
             }}
           />
           <CardMember
             member={{
-              nama: "Abimanyu Putro Yulianto",
-              nim: "21120119140120",
-              username: "abimanyupy",
+              nama: 'Abimanyu Putro Yulianto',
+              nim: '21120119140120',
+              username: 'abimanyupy',
             }}
           />
         </Grid>
